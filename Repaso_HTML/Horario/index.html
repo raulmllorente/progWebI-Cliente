@@ -1,0 +1,110 @@
+<!-- Crear una pagina web que nos muestre el horario de este trimestre. Algunos requisitos:
+- Tendra una fila de cabecera con los dias de la semana y una columna inicial con los tramos horarios
+- Habra filas que ocupen mas columnas para indicar la hora de los descansos y las comidas
+- Habra algunas clases que ocupen varios tramos horarios contiguos
+- En donde esté la asignatura de programación Web, habra una lista no ordenada, indicando que podemos dar Teoría y Práctica
+- Cada asignatura tiene su color, y las celdas de descansos y comidas también
+- Probemos a ponerle borde o no, colapsarlo y también a ponerle un grosor
+- El texto en todas las celdas ha de estar centrado, las cabeceras en negrita
+- Hagamos que todas las celdas tengan la misma altura y anchura, una que permita que se vean las asignaturas de forma clara
+- Le ponemos un favicon?
+-->
+
+<!DOCTYPE html>
+<html lang="en"></html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio Horario</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                background-color: lightgray;
+                font-family: sans-serif;
+            }
+            td,th{
+                width: 200px;
+                padding: 20px;
+                border: 1px solid gray;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>8:00</th>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <th>9:00</th>
+                    <td colspan="4"></td>
+                    <td rowspan="2">
+                        Programacion Web I:Cli
+                        <ul>
+                            <li>Teoría</li>
+                            <li>Práctica</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td colspan="4"></td>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                </tr>
+                <tr>
+                    <th>13:00</th>
+                    <td rowspan="2">
+                        Programacion Web I:Cli
+                        <ul>
+                            <li>Teoría</li>
+                            <li>Práctica</li>
+                        </ul>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                    <td rowspan="2">
+                        <div>INSO3A<br>Dir. Gest. Proyectos<br>Eugenio Silero<br>MD101</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>13:00</th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

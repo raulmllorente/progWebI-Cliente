@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript: Basicos</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 0. MENSAJES
+            // Alert
+            alert('Hello world!')
+            // Console
+            console.log('Logged message')
+            console.info('Info message')
+            console.error('Error message')
+            console.warn('Warning message')
+            // Debugger: ACTIVACION
+            debugger
+            console.log('After debugger')
+
+            // 1. VARIABLES
+            // variables globales y locales, scope o ambito
+            const message = 'Hello world!'
+            console.log(message)
+            if (true) {
+                const text = 'whatever'
+                console.log(text)
+            }
+            //console.log(text)
+
+            // Cambiar el valor de una constante?
+            const name = 'Nayra';
+            console.log(name)
+            //name = 'Isabel';
+
+            // Diferencia let/var
+            let mejor = 'variable con scope';
+            var peor = 'variable sin scope';
+            console.log(peor)
+            console.log(mejor)
+            if(true){
+                console.log(peor)
+                console.log(mejor)
+                let mejor2 = 'variable con scope local';
+                var peor2 = 'variable sin scope, pret. local';
+            }
+            console.log(peor2)
+            //console.log(mejor2)
+
+            // 2. NUMEROS
+            // + Sumar
+            console.log(2 + 2)
+            // - Restar
+            console.log(3 - 1)
+            // * Multiplicar
+            console.log(3 * 2)
+            // / Dividir
+            console.log(4 / 2)
+            // < Menor que
+            console.log(10 < 20)
+            // > Mayor que
+            console.log(40 > 20)
+            // <= Menor o igual que
+            console.log(10 <= 20)
+            // >= Mayor o igual que
+            console.log(50 >= 40)
+            // == Igual que (Check value)
+            console.log(40 == 40) // TRUE
+            console.log(40 == '40') // TRUE
+            // === Igual que (Check value and type)
+            console.log(40 === 40) // TRUE
+            console.log(40 === '40') // FALSE
+            // != No es igual que
+            console.log(30 !== 30)
+            // typeof
+            let num = 20
+            console.log(typeof num)
+            // NaN
+            const notNumber = 'asfda';
+            isNaN(NaN)
+            // isNaN()
+            console.log(isNaN(NaN))
+            console.log(isNaN('whatever'))
+            console.log(isNaN('12'))
+            console.log(isNaN(12))
+            // toString()
+            let number = 100.1164123412
+            console.log(number.toString())
+            console.log(typeof number.toString())
+            // .toFixed()
+            console.log(number.toFixed(2))
+            /*
+             * Obtener el total gastado en la compra de estos productos, aplica el descuento indicado.
+             * 
+             * Móvil (300€) + Cascos (30€) + Funda (10€)
+             * Descuento 10%
+             * La compra tiene un IVA del 21%
+             */
+            const PRICE_MOBILE = 300;
+            const PRICE_HEADPHONES = 30;
+            const PRICE_MOBILE_CASE = 10;
+            const DISCOUNT = 10;
+            const IVA = 1 + 21/100;
+            const TOTAL = PRICE_MOBILE + PRICE_HEADPHONES + PRICE_MOBILE_CASE;
+            const SUBTOTAL1 = TOTAL * DISCOUNT / 100;
+            const SUBTOTAL2 = SUBTOTAL1 * IVA;
+            console.log(SUBTOTAL2)
+
+            // 4. CADENAS
+            // concatenar texto
+            console.log('Hello ' + 'World')
+            // template literals
+            const name2 = 'Nayra'
+            console.log(`Hello ${name2} que pases un buen dia`)
+            // typeof
+            console.log(typeof name2)
+            // .length
+            console.log(name2.length)
+            // .includes()
+            console.log(name2.includes('asdfasdf'))
+            // .slice(start, end)
+            console.log(name2.slice(2, 5))
+            // .replace(‘este texto', ‘por este otro’)
+            console.log(name2.replace('na', 'asdfas'))
+            // .trim()
+            const text = '   as dfas a asdfasd a    '
+            console.log(text.trim())
+            // .split(‘,’)
+            const geolocation = 'Calle whatever. 7. 1D'
+            console.log(geolocation.split('.'))
+
+            // 5. BOOLEANS
+            // True (Verdadero)
+            // 1
+            // "Whatever"
+            // 3.14
+            // 100 > 5
+            // 1 < 100
+            // '1' == 1
+            console.log(Boolean(1))
+            console.log(Boolean('Whatever'))
+            console.log(Boolean(3.14))
+            console.log(Boolean(100 > 5))
+            console.log(Boolean(1 < 100))
+            console.log(Boolean('1' == 1))
+
+            // False (Falso)
+            // 0, -0
+            // ""
+            // NaN
+            // null
+            // undefined
+            // '1' === 1
+            console.log(Boolean(0))
+            console.log(Boolean(-0))
+            console.log(Boolean(''))
+            console.log(Boolean(NaN))
+            console.log(Boolean(null))
+            console.log(Boolean(undefined))
+            console.log(Boolean('1' === 1))
+
+            // 6. VALORES NULOS E INDEFINIDOS
+            // UNDEFINED
+            // testing var
+            console.log(a)
+            var a = 'testing var'
+            console.log(a)
+
+            // testing let
+            console.log(b)
+            let b = 'testing let'
+            console.log(b)
+
+            // NULL
+            // testing var
+            console.log(c)
+            var c = null
+            console.log(c)
+
+            // testing let
+            console.log(d)
+            let d = null
+            console.log(d)
+
+            // 7. FUNCIONES
+            // DEFINE
+            function sayHello() {
+                console.log('Hello world !')
+            }
+            // EJECUTA
+            sayHello()
+
+            // DEFINE
+            function sum() {
+                console.log(2 + 2)
+            }
+            // EJECUTA
+            sum()
+
+            //Ambito de las variables en las funciones
+            const saludo = 'Hello world'
+            console.log(saludo)
+
+            function sayHola() {
+                const saludo = 'Hola Nayra'
+                console.log(saludo)
+            }
+
+            sayHola()
+            console.log(saludo)
+
+            // Paso de parametros y valores por defecto
+            function sayHolaName(name = 'World') {
+                console.log('Hello ' + name)
+            }
+
+            sayHolaName()
+            sayHolaName('Nayra')
+
+            function sumaparam(a, b) {
+                console.log(a + b)
+            }
+
+            sumaparam(2, 5)
+            sumaparam(10, 5)
+            sumaparam(20, 50)
+            sumaparam(3, 8)
+
+            //Valor de retorno
+            function sayHolaRetorno(name = 'world') {
+                return `Hello ${name}`;
+            }
+
+            console.log(sayHolaRetorno())
+            console.log(sayHolaRetorno('Nayra'))
+
+            //Funcion anonima
+            var sayHolaAnonymFunc = function(name = 'world') {
+                return `Hello ${name}`
+            }
+
+            console.log(sayHolaAnonymFunc())
+            console.log(sayHolaAnonymFunc('Nayra'))
+
+            // Arrow functions
+            var sayHolaArrow = (name) => `Hello ${name}`
+            var sayBye = (name) => {
+                return `Bye ${name}`
+            }
+
+            console.log(sayHolaArrow('Nayra')) 
+            console.log(sayBye('Nayra'))
+
+
+            // 8. ESTRUCTURAS CONDICIONALES
+            /*
+             * Quiero irme de viaje, ¿tengo suficiente dinero?
+             * Sí, me voy de viaje.
+             * Sí, pero tengo un presupuesto ajustado.
+             * No, tengo que seguir ahorrando.
+            */
+            const flight = 100;
+            const hotel = 50;
+            const tour = 30;
+            const total = flight + hotel + tour;
+            const budget = 300;
+
+            if (budget > total) {
+                console.log('Sí, me voy de viaje.')
+            } else if (budget === total) {
+                console.log('Sí, pero tengo un presupuesto ajustado')
+            } else {
+                console.log(' No, tengo que seguir ahorrando.')
+            }
+
+
+            /*
+             * OPERADOR TERNARIO
+             * Quiero irme de viaje, ¿tengo suficiente dinero?
+             * Sí, me voy de viaje.
+             * No, tengo que seguir ahorrando.
+             */
+            const budget2 = 100;
+
+            const result = budget2 > total 
+                ? console.log('Sí, me voy de viaje')
+                : console.log('No, no me voy de viaje')
+
+        </script>
+    </body>
+</html>

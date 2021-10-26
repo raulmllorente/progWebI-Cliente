@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    background-color: silver;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+th,td {
+    border: 1px solid gray;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.asignatura{
+    background-color: bisque;
+    padding: 0px;
+}
+
+.asignatura .texto {
+    background-color: darkgray;
+}
+
+.asignatura .horaini{
+    text-align: left;
+}
