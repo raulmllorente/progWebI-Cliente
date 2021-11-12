@@ -1,0 +1,42 @@
+[
+{
+    "ENUNCIADO": "En una vía fuera de poblado con arcén suficiente y transitable, ¿por qué parte de la vía circulará con un cuadriciclo ligero?",
+    "RESPUESTA1": "Por el arcén derecho.",
+    "RESPUESTA2": "Por el carril derecho de la calzada, sin invadir el arcén.",
+    "RESPUESTA3": "Por el carril derecho de la calzada, aunque deberé desplazarme al arcén cuando obstaculice la marcha normal del resto de los vehículos.",
+    "RESPUESTACORRECTA"1",
+    "ID": "1"
+  },
+  {
+    "ENUNCIADO": "Cuando en una intersección la preferencia de paso no está indicada por señal, ¿a qué vehículos se debe ceder el paso?",
+    "RESPUESTA1": "A los vehículos que circulen por la vía transversal, sea cualquiera el lado por el que se aproximen.",
+    "RESPUESTA2": "A los vehículos que se aproximen por la izquierda.",
+    "RESPUESTA3": "A los vehículos que se aproximen por la derecha.",
+    "RESPUESTACORRECTA": "3",
+    "ID": "2"
+  },
+  {
+    "ENUNCIADO": "¿Qué peligro indica esta señal?",
+    "RESPUESTA1": "El paso de animales de montura.",
+    "RESPUESTA2": "El paso de animales en libertad.",
+    "RESPUESTA3": "El paso de animales domésticos.",
+    "RESPUESTACORRECTA": "2",
+    "ID": "3"
+  },
+  {
+    "ENUNCIADO": "En poblado, ¿a qué velocidad máxima circulará conduciendo un ciclomotor de tres ruedas?",
+    "RESPUESTA1": "A 40 kilómetros por hora.",
+    "RESPUESTA2": "A 45 kilómetros por hora.",
+    "RESPUESTA3": "A 50 kilómetros por hora.",
+    "RESPUESTACORRECTA": "2",
+    "ID": "4"
+  },
+  {
+    "ENUNCIADO": "De noche, Ud. circula con su ciclomotor de tres ruedas por una vía interurbana suficientemente iluminada . Además de las luces de posición, ¿debe encender otra luz?",
+    "RESPUESTA1": "Sí, las luces de cruce.",
+    "RESPUESTA2": "Sí, las luces de cruce o de carretera, indistintamente.",
+    "RESPUESTA3": "No, porque la vía está suficientemente iluminada.",
+    "RESPUESTACORRECTA": "1",
+    "ID": "5"
+	}
+  ]
