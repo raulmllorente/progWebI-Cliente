@@ -31,7 +31,7 @@ th {
 }
 
 /* Estilos para el cuadrado */
-#recuadro {
+.recuadro {
   border: 1px solid black;
   height: 300px;
   margin: 20px auto;
@@ -39,8 +39,16 @@ th {
   width: 600px;
 }
 
-#recuadro #cuadrado {
+.recuadro #cuadrado {
   background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.coche {
   position: absolute;
   top: 0px;
   left: 0px;
